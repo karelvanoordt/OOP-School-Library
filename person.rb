@@ -1,4 +1,4 @@
-require_relative 'corrector'
+require_relative './corrector'
 
 class Person
   attr_accessor :name, :age
@@ -9,6 +9,7 @@ class Person
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @corrector = Corrector.new
   end
 
   private
@@ -24,6 +25,7 @@ class Person
   end
 
   def validate_name
-    @corrector.correct_name(@name)
+    @name = @corrector.correct_name(name)
   end
 end
+
