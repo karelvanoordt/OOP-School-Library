@@ -28,4 +28,3 @@ class Person
     @name = @corrector.correct_name(name)
   end
 end
-
