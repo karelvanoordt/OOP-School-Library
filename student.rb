@@ -1,5 +1,5 @@
-require './person.rb'
-require './classroom.rb'
+require './person'
+require './classroom'
 
 class Student < Person
   attr_reader :classroom
