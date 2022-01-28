@@ -10,7 +10,6 @@ class App
     @people = []
     @books = []
     @rentals = []
-    @class = Classroom.new('Juniors')
   end
 
   def run
