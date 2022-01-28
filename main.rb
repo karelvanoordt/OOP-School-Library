@@ -1,9 +1,9 @@
-require_relative 'person'
-require_relative 'teacher'
-require_relative 'student'
-require_relative 'classroom'
-require_relative 'book'
-require_relative 'rental'
+require './person.rb'
+require './teacher.rb'
+require './student.rb'
+require './classroom.rb'
+require './book.rb'
+require './rental.rb'
 
 class App
   def initialize
@@ -93,7 +93,7 @@ class App
     print 'Has parent permission? [Y/N]: '
     parent_permission = gets.chomp.downcase
 
-    student = Student.new(@class, age, name, parent_permission)
+    student = Student.new(age, name, parent_permission)
     @people << student
 
     puts 'Student created'

@@ -1,4 +1,4 @@
-require_relative 'rental'
+require './rental.rb'
 
 class Book
   attr_accessor :title, :author, :rentals
